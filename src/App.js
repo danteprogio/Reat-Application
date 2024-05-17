@@ -1,24 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Anchor } from "antd";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div
+        style={{
+          padding: "20px",
+        }}
+      >
+        <Anchor
+          direction="horizontal"
+          items={[
+            {
+              key: "part-1",
+              href: "#part-1",
+              title: "Part 1",
+            },
+            {
+              key: "part-2",
+              href: "#part-2",
+              title: "Part 2",
+            },
+            {
+              key: "part-3",
+              href: "#part-3",
+              title: "Part 3",
+            },
+          ]}
+        />
+      </div>
+      <div>
+        <div
+          id="part-1"
+          style={{
+            width: "100vw",
+            height: "100vh",
+            textAlign: "center",
+            background: "rgba(0,255,0,0.02)",
+          }}
+        />
+        <div
+          id="part-2"
+          style={{
+            width: "100vw",
+            height: "100vh",
+            textAlign: "center",
+            background: "rgba(0,0,255,0.02)",
+          }}
+        />
+        <div
+          id="part-3"
+          style={{
+            width: "100vw",
+            height: "100vh",
+            textAlign: "center",
+            background: "#FFFBE9",
+          }}
+        />
+      </div>
+    </>
   );
 }
 
